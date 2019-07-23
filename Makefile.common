@@ -1,0 +1,6 @@
+JL_SHARE = $(shell julia -e 'print(joinpath(Sys.BINDIR, Base.DATAROOTDIR, "julia"))')
+AM_CFLAGS	= -fPIC -Wall -g -I$(top_srcdir)/include $(shell $(JL_SHARE)/julia-config.jl "--cflags")
+AM_CPPFLAGS = 
+AM_LDFLAGS = 
+AM_LIBS = 
+
