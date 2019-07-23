@@ -16,6 +16,7 @@
 
 set -ex
 rm -rf autom4te.cache
+mkdir -p m4
 
 trap 'rm -f aclocal.m4.tmp' EXIT
 
