@@ -1,6 +1,6 @@
 # EmbeddingJuliaEx
 
-* Julia + Autotools + C Embedding
+Boilerplate for Julia Embedding to C and Autotools
 
 # How to install
 
