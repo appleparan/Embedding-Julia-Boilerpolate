@@ -1,4 +1,4 @@
-#include "pocel.h"
+#include "embed.h"
 
 int init_jl() {
     /* required: setup the Julia context */

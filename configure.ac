@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.63])
-AC_INIT([pocel], [0.1], [https://github.com/appleparan/POCEL/issues])
+AC_INIT([embed], [0.1], [https://github.com/appleparan/EmbeddingJuliaEx/issues])
 AC_CONFIG_SRCDIR([src])
 AM_INIT_AUTOMAKE([-Wall -Werror foreign])
 AC_CONFIG_MACRO_DIR([m4])

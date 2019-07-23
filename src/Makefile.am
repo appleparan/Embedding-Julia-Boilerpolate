@@ -1,22 +1,18 @@
 include $(top_srcdir)/Makefile.common
 
-lib_LTLIBRARIES = libpocel.la
-libpocel_includedir = $(top_srcdir)/include
-libpocel_la_SOURCES = pocel.c
+lib_LTLIBRARIES = libembed.la
+libembed_includedir = $(top_srcdir)/include
+libembed_la_SOURCES = embed.c
 
-#AM_CFLAGS	= -fPIC -Wall -g -std=c++11 -I$(top_srcdir)/include
-#AM_CPPFLAGS = -fPIC -Wall -g -std=c++11 -I$(top_srcdir)/include
-#AM_CXXFLAGS = -fPIC -Wall -g -std=c++11 -I$(top_srcdir)/include
-
-libpocel_la_CFLAGS = $(AM_CFLAGS)
-libpocel_la_CPPFLAGS = $(AM_CPPFLAGS)
-libpocel_la_LDFLAGS = $(AM_LDFLAGS)
-libpocel_la_LIBADD = $(AM_LIBS)
+libembed_la_CFLAGS = $(AM_CFLAGS)
+libembed_la_CPPFLAGS = $(AM_CPPFLAGS)
+libembed_la_LDFLAGS = $(AM_LDFLAGS)
+libembed_la_LIBADD = $(AM_LIBS)
 
 # Julia
-libpocel_la_CFLAGS += 
-libpocel_la_CPPFLAGS += 
-libpocel_la_LDFLAGS += $(shell $(JL_SHARE)/julia-config.jl "--ldflags") $(shell $(JL_SHARE)/julia-config.jl "--ldlibs")
-libpocel_la_LIBADD += -ljulia
+libembed_la_CFLAGS += 
+libembed_la_CPPFLAGS += 
+libembed_la_LDFLAGS += $(shell $(JL_SHARE)/julia-config.jl "--ldflags") $(shell $(JL_SHARE)/julia-config.jl "--ldlibs")
+libembed_la_LIBADD += -ljulia
 
 
